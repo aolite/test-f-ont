@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Review" "base:Review_info" "base:Asian_city" "base:Airport" "base:High_quality" "base:Reception" "base:Author" "base:North_American_city" "base:Mixed_review" "base:TravellerType" "base:North_American_airport" "base:Business" "base:Leisure" "base:Economy_quality" "base:South_American_city" "base:Flight_info" "base:Positive_review" "base:SeatType" "base:Asian_airport" "base:Place" "base:European_city" "base:City" "base:Airplane" "base:European_airport" "base:South_American_airport" "base:Negative_review" ; /*classes style*/
+	"base:Mixed_review" -> "base:Reception" [ label = "rdfs:subClassOf" ];
+	"base:TravellerType" -> "base:Review_info" [ label = "rdfs:subClassOf" ];
+	"base:City" -> "base:Place" [ label = "rdfs:subClassOf" ];
+	"base:Author" -> "base:Review_info" [ label = "rdfs:subClassOf" ];
+	"base:Economy_quality" -> "base:SeatType" [ label = "rdfs:subClassOf" ];
+	"base:South_American_airport" -> "base:Airport" [ label = "rdfs:subClassOf" ];
+	"base:European_city" -> "base:City" [ label = "rdfs:subClassOf" ];
+	"base:Negative_review" -> "base:Reception" [ label = "rdfs:subClassOf" ];
+	"base:Reception" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:European_airport" -> "base:Airport" [ label = "rdfs:subClassOf" ];
+	"base:Place" -> "base:Flight_info" [ label = "rdfs:subClassOf" ];
+	"base:North_American_airport" -> "base:Airport" [ label = "rdfs:subClassOf" ];
+	"base:Airplane" -> "base:Flight_info" [ label = "rdfs:subClassOf" ];
+	"base:SeatType" -> "base:Review_info" [ label = "rdfs:subClassOf" ];
+	"base:Asian_airport" -> "base:Airport" [ label = "rdfs:subClassOf" ];
+	"base:High_quality" -> "base:SeatType" [ label = "rdfs:subClassOf" ];
+	"base:North_American_city" -> "base:City" [ label = "rdfs:subClassOf" ];
+	"base:Airport" -> "base:Place" [ label = "rdfs:subClassOf" ];
+	"base:South_American_city" -> "base:City" [ label = "rdfs:subClassOf" ];
+	"base:Business" -> "base:TravellerType" [ label = "rdfs:subClassOf" ];
+	"base:Asian_city" -> "base:City" [ label = "rdfs:subClassOf" ];
+	"base:Positive_review" -> "base:Reception" [ label = "rdfs:subClassOf" ];
+	"base:Leisure" -> "base:TravellerType" [ label = "rdfs:subClassOf" ];
+
+}
